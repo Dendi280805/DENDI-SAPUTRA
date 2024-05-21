@@ -1,0 +1,61 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 43px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.social-media a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.moving-text {
+    animation: moveText 2s linear infinite;
+}
+
+@keyframes moveText {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(0%); }
+}
+
+.typing-animation {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin-top: 0px;
+    animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 20% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    40% { border-color: orange }
+}
